@@ -1,10 +1,14 @@
-# Jack Huffard
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+  <img src="assets/header-dark.svg" alt="Jack Huffard, Baseball Operations and Analytics" width="100%">
+</picture>
 
 **Baseball Operations and Analytics** M.S. Business Analytics candidate at Wake Forest University (May 2027) and Scouting Coordinator for Wake Forest Baseball Analytics.
 
 I build models to inform strategic decision making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data and coursework. The Wake systems are described below without the code.
 
-<img src="https://img.shields.io/badge/R-9E7E38?style=flat-square&logo=r&logoColor=white" alt="R"> <img src="https://img.shields.io/badge/Python-9E7E38?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-9E7E38?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Snowflake-9E7E38?style=flat-square&logo=snowflake&logoColor=white" alt="Snowflake"> <img src="https://img.shields.io/badge/Shiny-9E7E38?style=flat-square&logo=rstudioide&logoColor=white" alt="Shiny"> <img src="https://img.shields.io/badge/Tableau-9E7E38?style=flat-square&logo=tableau&logoColor=white" alt="Tableau"> <img src="https://img.shields.io/badge/Git-9E7E38?style=flat-square&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/R-101216?style=flat-square&logo=r&logoColor=C9A227" alt="R"> <img src="https://img.shields.io/badge/Python-101216?style=flat-square&logo=python&logoColor=C9A227" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-101216?style=flat-square&logo=postgresql&logoColor=C9A227" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Snowflake-101216?style=flat-square&logo=snowflake&logoColor=C9A227" alt="Snowflake"> <img src="https://img.shields.io/badge/Shiny-101216?style=flat-square&logo=rstudioide&logoColor=C9A227" alt="Shiny"> <img src="https://img.shields.io/badge/Tableau-101216?style=flat-square&logo=tableau&logoColor=C9A227" alt="Tableau"> <img src="https://img.shields.io/badge/Git-101216?style=flat-square&logo=git&logoColor=C9A227" alt="Git">
 
 ---
 

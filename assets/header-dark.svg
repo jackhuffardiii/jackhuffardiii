@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Jack Huffard, Baseball Operations and Analytics">
+  <title>Jack Huffard, Baseball Operations and Analytics</title>
+
+  <defs>
+    <style>
+      :root {
+        --bg:      #0B0C0E;
+        --panel:   #101216;
+        --ink:     #F4F2ED;
+        --muted:   #7A7F88;
+        --dim:     #3A3E45;
+        --gold:    #C9A227;
+        --gold-dk: #8A6D1F;
+        --line:    #1E2127;
+      }
+
+      .bg     { fill: var(--bg); }
+      .rule   { stroke: var(--line); stroke-width: 1; }
+      .grid   { stroke: var(--line); stroke-width: 1; }
+      .zone   { stroke: var(--gold); fill: none; }
+      .zin    { stroke: var(--gold); stroke-width: .9; opacity: .45; }
+      .edge   { stroke: var(--gold); stroke-width: 1; stroke-dasharray: 3 5; opacity: .5; fill: none; }
+      .plate  { stroke: var(--muted); stroke-width: 1.2; fill: none; opacity: .65; }
+
+      .name   { font-family: 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+                fill: var(--ink); font-size: 78px; letter-spacing: -1.5px; }
+      .kicker { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;
+                fill: var(--gold); font-size: 12.5px; letter-spacing: 4.2px; }
+      .tag    { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;
+                fill: var(--muted); font-size: 13.5px; letter-spacing: 5.4px; }
+      .micro  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;
+                fill: var(--dim); font-size: 10px; letter-spacing: 1.6px; }
+
+      .ball   { fill: var(--gold); }
+      .miss   { fill: none; stroke: var(--muted); stroke-width: 1.3; opacity: .75; }
+
+      /* Resting state is the final state, so the graphic is complete even if animation never runs. */
+      .fx     { animation: rise .7s cubic-bezier(.2,.8,.2,1) backwards; }
+      .pop    { transform-box: fill-box; transform-origin: center;
+                animation: pop .55s cubic-bezier(.2,.9,.25,1) backwards; }
+      .draw   { stroke-dasharray: 900; stroke-dashoffset: 0;
+                animation: draw 1.5s cubic-bezier(.65,0,.35,1) backwards; }
+
+      @keyframes rise { from { opacity: 0; } }
+      @keyframes pop  { from { opacity: 0; transform: scale(.25); } }
+      @keyframes draw { from { stroke-dashoffset: 900; } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .fx, .pop, .draw { animation: none; }
+      }
+    </style>
+
+    <pattern id="mesh" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" class="grid" fill="none" opacity=".55"/>
+    </pattern>
+
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#C9A227" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#C9A227" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="meshFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="55%"  stop-color="#fff" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="meshMask"><rect width="1200" height="300" fill="url(#meshFade)"/></mask>
+
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.035"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- ground -->
+  <rect class="bg" width="1200" height="300"/>
+  <rect width="1200" height="300" fill="url(#mesh)" mask="url(#meshMask)"/>
+  <ellipse cx="987" cy="140" rx="215" ry="165" fill="url(#halo)"/>
+  <rect width="1200" height="300" filter="url(#grain)" opacity=".5" style="pointer-events:none"/>
+
+  <!-- top + bottom hairlines -->
+  <line class="rule" x1="0" y1="0.5" x2="1200" y2="0.5"/>
+  <line class="rule" x1="0" y1="299.5" x2="1200" y2="299.5"/>
+  <rect x="0" y="296" width="1200" height="4" fill="var(--gold)" opacity=".9" class="fx" style="animation-delay:.55s"/>
+
+  <!-- ── masthead ───────────────────────────────────────── -->
+  <g transform="translate(70,-6)">
+    <g class="fx">
+      <rect x="0" y="79" width="22" height="2" fill="var(--gold)"/>
+      <text class="kicker" x="34" y="85">WAKE FOREST BASEBALL ANALYTICS</text>
+    </g>
+
+    <text class="name fx" x="-4" y="176" style="animation-delay:.08s">Jack Huffard</text>
+
+    <line class="rule draw" x1="0" y1="206.5" x2="560" y2="206.5" style="animation-delay:.3s"/>
+
+    <text class="tag fx" x="0" y="238" style="animation-delay:.2s">BASEBALL OPERATIONS AND ANALYTICS</text>
+  </g>
+
+  <!-- ── strike zone ────────────────────────────────────── -->
+  <g transform="translate(910,34)">
+
+    <!-- ball-edge boundary: the ABS calibration finding -->
+    <rect class="edge draw" x="-13" y="-13" width="181" height="226" rx="2" style="animation-delay:.5s"/>
+
+    <!-- nine-zone grid -->
+    <g class="draw" style="animation-delay:.34s">
+      <rect class="zone" x="0" y="0" width="155" height="200" stroke-width="1.6"/>
+      <line class="zin" x1="52"  y1="0" x2="52"  y2="200"/>
+      <line class="zin" x1="103" y1="0" x2="103" y2="200"/>
+      <line class="zin" x1="0" y1="67"  x2="155" y2="67"/>
+      <line class="zin" x1="0" y1="133" x2="155" y2="133"/>
+    </g>
+
+    <!-- home plate, catcher's perspective -->
+    <g class="fx" style="animation-delay:.62s">
+      <path class="plate" d="M27 219 H128 L128 230 L77.5 241 L27 230 Z"/>
+    </g>
+
+    <!-- pitches: filled = in zone, hollow = out -->
+    <g>
+      <circle class="ball pop" cx="26"  cy="35"  r="6.2" style="animation-delay:.70s"/>
+      <circle class="ball pop" cx="80"  cy="100" r="6.2" style="animation-delay:.78s"/>
+      <circle class="ball pop" cx="127" cy="60"  r="6.2" style="animation-delay:.86s"/>
+      <circle class="ball pop" cx="58"  cy="165" r="6.2" style="animation-delay:.94s"/>
+      <circle class="ball pop" cx="117" cy="152" r="6.2" style="animation-delay:1.02s"/>
+      <circle class="miss pop" cx="-8"  cy="117" r="6.2" style="animation-delay:1.10s"/>
+      <circle class="miss pop" cx="164" cy="183" r="6.2" style="animation-delay:1.18s"/>
+      <circle class="miss pop" cx="93"  cy="-10" r="6.2" style="animation-delay:1.26s"/>
+      <circle class="miss pop" cx="39"  cy="214" r="6.2" style="animation-delay:1.34s"/>
+    </g>
+  </g>
+</svg>
