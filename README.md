@@ -8,6 +8,17 @@ I build models to inform strategic decision making on the baseball field, and th
 
 ---
 
+## Background
+
+- **M.S. Business Analytics**, Wake Forest University, expected May 2027
+- **B.S. Mathematical Business**, Wake Forest University, May 2026. Minors in Entrepreneurship and Statistics
+- **Scouting Coordinator**, Wake Forest Baseball Analytics, December 2023 to present. Lead a team of eight student analysts producing opponent scouting reports for the coaching staff
+- **NASCAR Analytics Intern**, Active Decision Support, 2025. Driver evaluation metrics and race-outcome models
+- **Data Science Intern**, Tenable, 2024. Customer segmentation in Python and SQL against Snowflake, delivered as a Tableau dashboard still in use
+
+---
+
+
 ## How I work
 
 **Creative analytical strategies** I pride myself on thinking outside of the box, and staying flexible and resilient throughout the modeling process. For example, the small sample size issues in college baseball forced me to dive into Bayesian strategies which eventually resulted in a much improved final model (See DIP below). 
@@ -46,16 +57,6 @@ Proprietary to the program, so no code here. Included because it is the work tha
 | :--- | :--- |
 | **ABS challenge optimization** | When should a team spend an ABS challenge, and how much win probability did MLB teams leave on the table in the system's first season? A challenge is an option, not a coin flip, so the model is a dynamic program over game state (inning, margin, challenges remaining) against the win-probability value of flipping the call, with a hierarchical layer for player-level challenge accuracy and a perception model so the policy conditions on what the challenger could plausibly see rather than on Hawk-Eye truth. Analysis finished on the first half of 2026; writeup in draft. |
 | **Batter-pitcher matchup engine** | Simulates plate appearance outcomes for any hitter-pitcher pairing: Beta shrinkage toward population priors, Marcel-style recency weighting, log5 combination, Monte Carlo, and a count-state Markov chain layered over pitch-level tendencies. Coded the matchup engine and shiny app using Claude given the statistical techniques and workflow that I perscribed, verifying the results and code myself.|
-
----
-
-## Background
-
-- **M.S. Business Analytics**, Wake Forest University, expected May 2027
-- **B.S. Mathematical Business**, Wake Forest University, May 2026. Minors in Entrepreneurship and Statistics
-- **Scouting Coordinator**, Wake Forest Baseball Analytics, December 2023 to present. Lead a team of eight student analysts producing opponent scouting reports for the coaching staff
-- **NASCAR Analytics Intern**, Active Decision Support, 2025. Driver evaluation metrics and race-outcome models
-- **Data Science Intern**, Tenable, 2024. Customer segmentation in Python and SQL against Snowflake, delivered as a Tableau dashboard still in use
 
 ---
 
