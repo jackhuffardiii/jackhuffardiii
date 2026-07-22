@@ -6,7 +6,7 @@
 
 **Baseball Operations and Analytics** M.S. Business Analytics candidate at Wake Forest University (May 2027) and Scouting Coordinator for Wake Forest Baseball Analytics.
 
-I build models to inform strategic decision making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data and coursework. The Wake systems are described below without the code.
+I build models to inform strategic decision-making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data and coursework. The Wake systems are described below without the code.
 
 <img src="https://img.shields.io/badge/R-101216?style=flat-square&logo=r&logoColor=C9A227" alt="R"> <img src="https://img.shields.io/badge/Python-101216?style=flat-square&logo=python&logoColor=C9A227" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-101216?style=flat-square&logo=postgresql&logoColor=C9A227" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Snowflake-101216?style=flat-square&logo=snowflake&logoColor=C9A227" alt="Snowflake"> <img src="https://img.shields.io/badge/Shiny-101216?style=flat-square&logo=rstudioide&logoColor=C9A227" alt="Shiny"> <img src="https://img.shields.io/badge/Tableau-101216?style=flat-square&logo=tableau&logoColor=C9A227" alt="Tableau"> <img src="https://img.shields.io/badge/Git-101216?style=flat-square&logo=git&logoColor=C9A227" alt="Git">
 
@@ -25,13 +25,13 @@ I build models to inform strategic decision making on the baseball field, and th
 
 ## How I work
 
-**Creative analytical strategies** I pride myself on thinking outside of the box, and staying flexible and resilient throughout the modeling process. For example, the small sample size issues in college baseball forced me to dive into Bayesian strategies which eventually resulted in a much improved final model (See DIP below). 
+**Creative analytical strategies** I pride myself on thinking outside of the box, and staying flexible and resilient throughout the modeling process. For example, the small sample size issues in college baseball forced me to dive into Bayesian strategies, which eventually resulted in a much improved final model (See DIP below). 
 
 **Tools that get used during games.** The pitching coach calls pitches off a PDF my code generates. That constraint, that it has to work on a Tuesday afternoon with the actual staff, shapes the modeling more than any accuracy metric does.
 
 **Decision problems over descriptive stats.** While descriptive stats help us understand what happened, I focus on modeling what we think WILL happen. 
 
-**AI for productivity, efficiency, and brainstorming** I use Claude as a thought partner and an efficiency tool, it helps me move faster without compromising quality. The key is knowing how to write clear, effective prompts to get exactly what you need, whether that’s analyzing feedback, generating ideas, or fact-checking. I treat it as a powerful tool when used with intention and skill. I've also linked my Claude Code to an Obsidian folder which serves as a persistent, searchable record of every project I've built, so I'm not re-explaining my own work at the start of every session, cutting my token usage significantly. 
+**AI for productivity, efficiency, and brainstorming** I use Claude as a thought partner and an efficiency tool; it helps me move faster without compromising quality. The key is knowing how to write clear, effective prompts to get exactly what you need, whether that’s analyzing feedback, generating ideas, or fact-checking. I treat it as a powerful tool when used with intention and skill. I've also linked my Claude Code to an Obsidian folder, which serves as a persistent, searchable record of every project I've built, so I'm not re-explaining my own work at the start of every session, cutting my token usage significantly. 
 
 ---
 
@@ -60,7 +60,7 @@ Proprietary to the program, so no code here. Included because it is the work tha
 | Project | Summary |
 | :--- | :--- |
 | **ABS challenge optimization** | When should a team spend an ABS challenge, and how much win probability did MLB teams leave on the table in the system's first season? A challenge is an option, not a coin flip, so the model is a dynamic program over game state (inning, margin, challenges remaining) against the win-probability value of flipping the call, with a hierarchical layer for player-level challenge accuracy and a perception model so the policy conditions on what the challenger could plausibly see rather than on Hawk-Eye truth. Analysis finished on the first half of 2026; writeup in draft. |
-| **Batter-pitcher matchup engine** | Simulates plate appearance outcomes for any hitter-pitcher pairing: Beta shrinkage toward population priors, Marcel-style recency weighting, log5 combination, Monte Carlo, and a count-state Markov chain layered over pitch-level tendencies. Coded the matchup engine and shiny app using Claude given the statistical techniques and workflow that I perscribed, verifying the results and code myself.|
+| **Batter-pitcher matchup engine** | Simulates plate appearance outcomes for any hitter-pitcher pairing: Beta shrinkage toward population priors, Marcel-style recency weighting, log5 combination, Monte Carlo, and a count-state Markov chain layered over pitch-level tendencies. Coded the matchup engine and Shiny app using Claude given the statistical techniques and workflow that I prescribed, verifying the results and code myself.|
 
 ---
 
