@@ -14,7 +14,7 @@ I build models to inform strategic decision-making on the baseball field, and th
 
 ## Background
 
-- **M.S. Business Analytics**, Wake Forest University, expected May 2027
+- **M.S. Business Analytics**, Wake Forest University, May 2027
 - **B.S. Mathematical Business**, Wake Forest University, May 2026. Minors in Entrepreneurship and Statistics
 - **Scouting Coordinator**, Wake Forest Baseball Analytics, December 2023 to present. Lead a team of eight student analysts producing opponent scouting reports for the coaching staff
 - **NASCAR Analytics Intern**, Active Decision Support, 2025. Driver evaluation metrics and race-outcome models
