@@ -43,6 +43,7 @@ I build models to inform strategic decision-making on the baseball field, and th
 | :--- | :--- |
 | **[nba-statistical-analysis](https://github.com/jackhuffardiii/nba-statistical-analysis)** | Predicting NBA wins from Dean Oliver's Four Factors across 10,780 games (2017-2022). Logistic regression, KNN, and random forest compared under 10-fold cross-validation, with permutation importance from the forest. Shooting efficiency and opponent shooting efficiency dominate; free throw rate is the least influential of the four. |
 | **[pitch-velocity-bayesian-hierarchical-model](https://github.com/jackhuffardiii/pitch-velocity-bayesian-hierarchical-model)** | How much of a pitch's release speed comes down to game situation (count, inning, baserunners) versus the pitcher throwing it and the pitch type? Four JAGS models compared by DIC across eight starters. Adding pitch type and pitcher random intercepts cuts DIC by more than half, and leaving pitch type out systematically understates fastball velocity by 4 to 6 mph. |
+| **[mlb-trade-web](https://github.com/jackhuffardiii/mlb-trade-web)** | Engineered an MLB trade flow visualization app using agentic coding. A GitHub action runs daily at 7:00 AM EST, which scans for new trades and adds them to the dataset. Deployed app at https://mlb-trade-web.vercel.app/. Feel free to check it out!
 
 ### Built for Wake Forest Baseball Analytics
 
