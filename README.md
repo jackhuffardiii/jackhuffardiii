@@ -32,8 +32,7 @@ I build models to inform strategic decision-making on the baseball field, and th
 
 ## Resume
 
-**[View my resume](assets/jack-huffard-resume.pdf)** or **[download the PDF](https://github.com/jackhuffardiii/jackhuffardiii/raw/main/assets/jack-huffard-resume.pdf)**. GitHub renders it in the browser at the first link, so it reads on screen without a download.
-
+**[View my resume](assets/jack-huffard-resume.pdf)** or **[download the PDF](https://github.com/jackhuffardiii/jackhuffardiii/raw/main/assets/jack-huffard-resume.pdf)**. 
 ---
 
 ## Background
