@@ -6,11 +6,9 @@
 
 <img src="assets/headshot.jpg" alt="Jack Huffard" width="170" align="right">
 
-**Baseball Operations and Analytics** M.S. Business Analytics candidate at Wake Forest University (May 2027) and Scouting Coordinator for Wake Forest Baseball Analytics.
+**Baseball Operations and Sports Analytics** M.S. Business Analytics candidate at Wake Forest University (May 2027) and Scouting Coordinator for Wake Forest Baseball Analytics.
 
 I build models to inform strategic decision-making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data and coursework. The Wake systems are described below without the code.
-
-**What I am targeting.** Analyst and R&D roles in baseball operations, and coaching-facing analytics groups in other sports where the job is the same shape: take a decision a staff actually has to make, model it, and ship it as something they can use during a game. I have carried the same toolkit through four domains already. Bayesian hierarchical modeling on college pitching (DIP), machine learning on driver performance in NASCAR, customer segmentation on Snowflake data at a cybersecurity company, and classification on NBA team performance. The sport changes and the vocabulary changes. Small samples, noisy outcomes, and a non-technical decision maker on the other end do not.
 
 <img src="https://img.shields.io/badge/R-101216?style=flat-square&logo=r&logoColor=C9A227" alt="R"> <img src="https://img.shields.io/badge/Python-101216?style=flat-square&logo=python&logoColor=C9A227" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-101216?style=flat-square&logo=postgresql&logoColor=C9A227" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Snowflake-101216?style=flat-square&logo=snowflake&logoColor=C9A227" alt="Snowflake"> <img src="https://img.shields.io/badge/Shiny-101216?style=flat-square&logo=rstudioide&logoColor=C9A227" alt="Shiny"> <img src="https://img.shields.io/badge/Tableau-101216?style=flat-square&logo=tableau&logoColor=C9A227" alt="Tableau"> <img src="https://img.shields.io/badge/Git-101216?style=flat-square&logo=git&logoColor=C9A227" alt="Git">
 
