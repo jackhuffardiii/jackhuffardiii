@@ -4,11 +4,37 @@
   <img src="assets/header-dark.svg" alt="Jack Huffard, Baseball Operations and Analytics" width="100%">
 </picture>
 
+<img src="assets/headshot.jpg" alt="Jack Huffard" width="170" align="right">
+
 **Baseball Operations and Analytics** M.S. Business Analytics candidate at Wake Forest University (May 2027) and Scouting Coordinator for Wake Forest Baseball Analytics.
 
 I build models to inform strategic decision-making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data and coursework. The Wake systems are described below without the code.
 
+**What I am targeting.** Analyst and R&D roles in baseball operations, and coaching-facing analytics groups in other sports where the job is the same shape: take a decision a staff actually has to make, model it, and ship it as something they can use during a game. I have carried the same toolkit through four domains already. Bayesian hierarchical modeling on college pitching (DIP), machine learning on driver performance in NASCAR, customer segmentation on Snowflake data at a cybersecurity company, and classification on NBA team performance. The sport changes and the vocabulary changes. Small samples, noisy outcomes, and a non-technical decision maker on the other end do not.
+
 <img src="https://img.shields.io/badge/R-101216?style=flat-square&logo=r&logoColor=C9A227" alt="R"> <img src="https://img.shields.io/badge/Python-101216?style=flat-square&logo=python&logoColor=C9A227" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-101216?style=flat-square&logo=postgresql&logoColor=C9A227" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Snowflake-101216?style=flat-square&logo=snowflake&logoColor=C9A227" alt="Snowflake"> <img src="https://img.shields.io/badge/Shiny-101216?style=flat-square&logo=rstudioide&logoColor=C9A227" alt="Shiny"> <img src="https://img.shields.io/badge/Tableau-101216?style=flat-square&logo=tableau&logoColor=C9A227" alt="Tableau"> <img src="https://img.shields.io/badge/Git-101216?style=flat-square&logo=git&logoColor=C9A227" alt="Git">
+
+---
+
+## Introduction
+
+<!--
+  TO EMBED THE VIDEO:
+  1. Go to github.com/jackhuffardiii/jackhuffardiii, click README.md, click the pencil (edit).
+  2. Drag your .mp4 or .mov straight into the editor on the line marked below.
+  3. GitHub uploads it and replaces the drop with a https://github.com/user-attachments/assets/... URL.
+     Delete the placeholder line, leave the URL on its own line. That URL alone renders a player.
+  4. Limits: 10 MB on a free account, 100 MB on Pro. .mp4 and .mov only.
+-->
+
+<!-- DROP THE VIDEO FILE ON THE LINE BELOW, THEN DELETE THIS PLACEHOLDER LINE -->
+*A ninety second introduction: who I am, what I build, and the roles I am pointed at.*
+
+---
+
+## Resume
+
+**[View the resume](assets/jack-huffard-resume.pdf)** or **[download the PDF](https://github.com/jackhuffardiii/jackhuffardiii/raw/main/assets/jack-huffard-resume.pdf)**. GitHub renders it in the browser at the first link, so it reads on screen without a download.
 
 ---
 
@@ -16,9 +42,9 @@ I build models to inform strategic decision-making on the baseball field, and th
 
 - **M.S. Business Analytics**, Wake Forest University, May 2027
 - **B.S. Mathematical Business**, Wake Forest University, May 2026. Minors in Entrepreneurship and Statistics
-- **Scouting Coordinator**, Wake Forest Baseball Analytics, December 2023 to present. Lead a team of eight student analysts producing opponent scouting reports for the coaching staff
-- **NASCAR Analytics Intern**, Active Decision Support, 2025. Driver evaluation metrics and race-outcome models
-- **Data Science Intern**, Tenable, 2024. Customer segmentation in Python and SQL against Snowflake, delivered as a Tableau dashboard still in use
+- **Scouting Coordinator**, Wake Forest Baseball Analytics, December 2023 to present. Lead a team of eight student analysts producing opponent scouting reports for the coaching staff. I own the pipeline the reports are built on and translate the coaches' questions into the analyses that answer them
+- **NASCAR Analytics Intern**, Active Decision Support, 2025. Built the driver evaluation system: custom performance metrics and machine learning models that predict race outcomes and separate over- from underperformers by track type, delivered as R Markdown leaderboards for a non-technical audience
+- **Data Science Intern**, Tenable, 2024. Customer segmentation in Python on Snowflake data pulled with SQL, scored on license usage, scan frequency, and scan size. Delivered as a Tableau dashboard still in use today, demoed to more than 50 data scientists, engineers, and customer success managers, and used to hand the sales team its 400 strongest upsell leads
 
 ---
 
@@ -43,7 +69,7 @@ I build models to inform strategic decision-making on the baseball field, and th
 | :--- | :--- |
 | **[nba-statistical-analysis](https://github.com/jackhuffardiii/nba-statistical-analysis)** | Predicting NBA wins from Dean Oliver's Four Factors across 10,780 games (2017-2022). Logistic regression, KNN, and random forest compared under 10-fold cross-validation, with permutation importance from the forest. Shooting efficiency and opponent shooting efficiency dominate; free throw rate is the least influential of the four. |
 | **[pitch-velocity-bayesian-hierarchical-model](https://github.com/jackhuffardiii/pitch-velocity-bayesian-hierarchical-model)** | How much of a pitch's release speed comes down to game situation (count, inning, baserunners) versus the pitcher throwing it and the pitch type? Four JAGS models compared by DIC across eight starters. Adding pitch type and pitcher random intercepts cuts DIC by more than half, and leaving pitch type out systematically understates fastball velocity by 4 to 6 mph. |
-| **[mlb-trade-web](https://github.com/jackhuffardiii/mlb-trade-web)** | Engineered an MLB trade flow visualization app using agentic coding. A GitHub action runs daily at 7:00 AM EST, which scans for new trades and adds them to the dataset. Deployed app at https://mlb-trade-web.vercel.app/. Feel free to check it out!
+| **[mlb-trade-web](https://github.com/jackhuffardiii/mlb-trade-web)** | Engineered an MLB trade flow visualization app using agentic coding. A GitHub action runs daily at 7:00 AM EST, which scans for new trades and adds them to the dataset. Deployed app at https://mlb-trade-web.vercel.app/. Feel free to check it out! |
 
 ### Built for Wake Forest Baseball Analytics
 
