@@ -14,22 +14,6 @@ I build models to inform strategic decision-making on the baseball field, and th
 
 ---
 
-## Introduction
-
-<!--
-  TO EMBED THE VIDEO:
-  1. Go to github.com/jackhuffardiii/jackhuffardiii, click README.md, click the pencil (edit).
-  2. Drag your .mp4 or .mov straight into the editor on the line marked below.
-  3. GitHub uploads it and replaces the drop with a https://github.com/user-attachments/assets/... URL.
-     Delete the placeholder line, leave the URL on its own line. That URL alone renders a player.
-  4. Limits: 10 MB on a free account, 100 MB on Pro. .mp4 and .mov only.
--->
-
-<!-- DROP THE VIDEO FILE ON THE LINE BELOW, THEN DELETE THIS PLACEHOLDER LINE -->
-*A ninety second introduction: who I am, what I build, and the roles I am pointed at.*
-
----
-
 ## Resume
 
 **[View my resume](assets/jack-huffard-resume.pdf)** or **[download the PDF](https://github.com/jackhuffardiii/jackhuffardiii/raw/main/assets/jack-huffard-resume.pdf)**. 
