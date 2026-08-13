@@ -18,7 +18,8 @@ I build models to inform strategic decision-making on the baseball field, and th
 
 **[View my resume](assets/jack-huffard-resume.pdf)** or **[download the PDF](https://github.com/jackhuffardiii/jackhuffardiii/raw/main/assets/jack-huffard-resume.pdf)**. 
 ---
-
+## Introduction
+(assets/intro.mp4)
 ## Background
 
 - **M.S. Business Analytics**, Wake Forest University, May 2027
