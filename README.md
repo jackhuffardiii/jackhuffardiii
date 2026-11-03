@@ -8,7 +8,7 @@
 
 **Baseball Operations and Sports Analytics** M.S. Business Analytics candidate at Wake Forest University (May 2027) and Scouting Coordinator for Wake Forest Baseball Analytics.
 
-I build models to inform strategic decision-making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data and coursework. The Wake systems are described below without the code.
+I build models to inform strategic decision-making on the baseball field, and the R infrastructure that puts them in front of a coaching staff. Most of that work is proprietary to Wake Forest and is not public, so this profile is the other half: research on public data, personal projects, and coursework. The Wake systems are described below without the code.
 
 <img src="https://img.shields.io/badge/R-101216?style=flat-square&logo=r&logoColor=C9A227" alt="R"> <img src="https://img.shields.io/badge/Python-101216?style=flat-square&logo=python&logoColor=C9A227" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-101216?style=flat-square&logo=postgresql&logoColor=C9A227" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Snowflake-101216?style=flat-square&logo=snowflake&logoColor=C9A227" alt="Snowflake"> <img src="https://img.shields.io/badge/Shiny-101216?style=flat-square&logo=rstudioide&logoColor=C9A227" alt="Shiny"> <img src="https://img.shields.io/badge/Tableau-101216?style=flat-square&logo=tableau&logoColor=C9A227" alt="Tableau"> <img src="https://img.shields.io/badge/Git-101216?style=flat-square&logo=git&logoColor=C9A227" alt="Git">
 
@@ -50,7 +50,9 @@ I build models to inform strategic decision-making on the baseball field, and th
 | :--- | :--- |
 | **[nba-statistical-analysis](https://github.com/jackhuffardiii/nba-statistical-analysis)** | Predicting NBA wins from Dean Oliver's Four Factors across 10,780 games (2017-2022). Logistic regression, KNN, and random forest compared under 10-fold cross-validation, with permutation importance from the forest. Shooting efficiency and opponent shooting efficiency dominate; free throw rate is the least influential of the four. |
 | **[pitch-velocity-bayesian-hierarchical-model](https://github.com/jackhuffardiii/pitch-velocity-bayesian-hierarchical-model)** | How much of a pitch's release speed comes down to game situation (count, inning, baserunners) versus the pitcher throwing it and the pitch type? Four JAGS models compared by DIC across eight starters. Adding pitch type and pitcher random intercepts cuts DIC by more than half, and leaving pitch type out systematically understates fastball velocity by 4 to 6 mph. |
+| **[milb-hitter-value](https://github.com/jackhuffardiii/milb-hitter-value)** | Surplus dollar values for every A through AAA hitter and pitcher, with an audit trail from the minor league stat line to MLB-equivalent rates, P(reach MLB), expected WAR over six control years, ETA, and surplus dollars with a 10/50/90 range. On the 2013-17 hitter holdout, it beats a naive baseline on P(MLB) log loss (.371 vs .447). However, Baseball America's rankings still order prospects better (.238 vs .369 Spearman with realized six-year WAR). Live at https://milb-hitter-value.netlify.app, including a beta trade page. |
 | **[mlb-trade-web](https://github.com/jackhuffardiii/mlb-trade-web)** | Engineered an MLB trade flow visualization app using agentic coding. A GitHub action runs daily at 7:00 AM EST, which scans for new trades and adds them to the dataset. Deployed app at https://mlb-trade-web.vercel.app/. Feel free to check it out! |
+| **[claude-desktop-mods](https://github.com/jackhuffardiii/claude-desktop-mods)** | Here is how I set up my Claude workflow: an auto-handoff mod that moves long sessions to a fresh one at 300k context tokens, the skills I wrote (spec interviews before any code, a model audit checklist, a sports ML workflow, brainstorming, handoffs, and slide rules), and the open-source skills I use with them. |
 
 ### Built for Wake Forest Baseball Analytics
 
@@ -60,15 +62,23 @@ Proprietary to the program, so no code here. Included because it is the work tha
 | :--- | :--- |
 | **DIP (Deacon Independent Pitching)** | A pitching metric that predicts next-season ERA, built from a coach's brief: make a stat that predicts future ERA, with a correlation over .40. Bayesian Gamma regression on K%, BB%, and a custom contact-quality feature fit from an empirical exit-velocity and launch-angle wOBA grid, estimated across roughly 1,228 pitcher-seasons with conference-tier intercepts. Correlates .402 with next-season ERA, against .290 for ERA itself, .315 for cFIP, and .308 for xFIP. Shipped as a production R function, a Shiny app with percentile bars, and conference leaderboards the staff uses. |
 | **Automated scouting infrastructure** | The system that turns raw tracking and charting data into the printable opponent reports the coaching staff works from. PostgreSQL through R Markdown and `gt` to PDF, rendered per opponent and per series, plus the hitter attack plans the pitching coach uses in game. |
-| **Stuff+ and xRV revamp**| Currently working to audit and update the underlying models that our Stuff+ and xRV models are built on top of, so that later when we retrain the Stuff+ and other models which use xRV as the target we get improved results. |
+| **Stuff+ and xRV rebuild** | Rebuilt our pitch-level xRV on ACC and SEC TrackMan data, with separate pre-pitch, pre-contact, and post-contact versions, and the Stuff+, Location+, Tunnel+, and Gamer Grade models on top of it. Coaches see pitch quality and results side by side, so the gap between the two is visible. Year-over-year validation of the newest version is still in progress. |
 
+
+### Other NBA work
+
+Code is private for now.
+
+| Project | Summary |
+| :--- | :--- |
+| **NBA Tradeability Index** | Two scores for every NBA contract: Asset Value (projected on-court value minus salary, from my own RAPM) and Movability (how many legal trade structures exist under the 2023 CBA, from a trade engine that replays every 2026-27 trade so far as legal). The test was written down before any result existed, and the main idea failed: Movability scored .483 and .495 where .500 is no signal, likely because some legal structure almost always exists. Salary, years left, and age alone predict who gets traded better than Asset Value does. |
 
 ### In progress
 
 | Project | Summary |
 | :--- | :--- |
-| **ABS challenge optimization** | When should a team spend an ABS challenge, and how much win probability did MLB teams leave on the table in the system's first season? A challenge is an option, not a coin flip, so the model is a dynamic program over game state (inning, margin, challenges remaining) against the win-probability value of flipping the call, with a hierarchical layer for player-level challenge accuracy and a perception model so the policy conditions on what the challenger could plausibly see rather than on Hawk-Eye truth. Analysis finished on the first half of 2026; writeup in draft. |
-| **Batter-pitcher matchup engine** | Simulates plate appearance outcomes for any hitter-pitcher pairing: Beta shrinkage toward population priors, Marcel-style recency weighting, log5 combination, Monte Carlo, and a count-state Markov chain layered over pitch-level tendencies. Coded the matchup engine and Shiny app using Claude given the statistical techniques and workflow that I prescribed, verifying the results and code myself.|
+| **NBA game simulator** | A possession-level Monte Carlo simulator (5,000 sims per game) scored against closing lines, with every test declared before scoring. The one-time 2025-26 holdout failed most of them: margin MAE was 11.78 against 10.82 for the closing spread, with no evidence that the sim adds information beyond the close, although its win probabilities were calibrated. It now logs live 2026-27 forecasts before tip, which get rescored at season end. |
+| **NBA lineup matchups** | Do lineup style and opponent style predict possession outcomes beyond additive player ratings, out of sample? Pre-registered against frozen RAPM as the null. A planted-effect power analysis came back at a 2% false positive rate but only 32% power at 3 points per 100, implying the test can only detect large effects. Test seasons 2022-25 are not scored yet. |
 
 ---
 
