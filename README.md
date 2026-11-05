@@ -62,7 +62,7 @@ Proprietary to the program, so no code here. Included because it is the work tha
 | :--- | :--- |
 | **DIP (Deacon Independent Pitching)** | A pitching metric that predicts next-season ERA, built from a coach's brief: make a stat that predicts future ERA, with a correlation over .40. Bayesian Gamma regression on K%, BB%, and a custom contact-quality feature fit from an empirical exit-velocity and launch-angle wOBA grid, estimated across roughly 1,228 pitcher-seasons with conference-tier intercepts. Correlates .402 with next-season ERA, against .290 for ERA itself, .315 for cFIP, and .308 for xFIP. Shipped as a production R function, a Shiny app with percentile bars, and conference leaderboards the staff uses. |
 | **Automated scouting infrastructure** | The system that turns raw tracking and charting data into the printable opponent reports the coaching staff works from. PostgreSQL through R Markdown and `gt` to PDF, rendered per opponent and per series, plus the hitter attack plans the pitching coach uses in game. |
-| **Stuff+ and xRV rebuild** | Rebuilt our pitch-level xRV on ACC and SEC TrackMan data, with separate pre-pitch, pre-contact, and post-contact versions, and the Stuff+, Location+, Tunnel+, and Gamer Grade models on top of it. Coaches see pitch quality and results side by side, so the gap between the two is visible. Year-over-year validation of the newest version is still in progress. |
+| **Stuff+ and xRV rebuild** | Rebuilt our pitch-level xRV on ACC and SEC TrackMan data, with our internal Pitching+ and Stuff+ grades built on top of it. Coaches see pitch quality and results side by side, so the gap between the two is visible. |
 
 
 ### Other NBA work
